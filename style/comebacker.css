@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin-ext);
+
+/* modal */
+#comebacker {
+	background: url(../img/bgexit.png);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: none;
+}
+
+#comebacker .close-undermodal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+#comebacker .close-over {
+	background: url(../img/close.png) no-repeat 0 0;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+}
+
+/* #comebacker .close-over:hover {
+	background-position: 0 bottom;
+}  */
+
+#comebacker .over-window {
+	background: url(../img/product.png) no-repeat 40px center #fff;
+	background-size: contain;
+	cursor: default;
+	left: 0;
+	right: 0;
+	top: 10%;
+	margin: 0 auto 10px auto;
+	position: fixed;
+	padding: 60px 2px 60px 25px;
+	width: 560px;
+	z-index: 9999;
+	position: relative;
+	font-family: 'PT Sans', arial, sans-serif !important;
+}
+
+#comebacker .title-comebacker {
+	font-size: 28px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	padding: 0 0 30px 0;
+	margin: 0 0 0 50%;
+}
+
+#comebacker .title-oui div {
+	font-size: 20px;
+}
+
+#comebacker .form {
+	margin: 0 0 0 50%;
+}
+
+#comebacker .form form {
+	margin: 0 !important;
+}
+
+#comebacker .form input[type="text"] {
+	background: #fff;
+	border: 1px solid #c00;
+	outline: none;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: futura-pt, Geneva, Arial, sans-serif;
+	width: 250px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+#comebacker .form input[type="text"]:focus {
+	border: 1px solid #c00;
+}
+
+#comebacker .form input[type="submit"] {
+	background: rgba(204, 0, 0, 0.9);
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	outline: none;
+	height: 50px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'PT Sans', arial, sans-serif;
+	width: 250px;
+	display: block;
+	margin: 0 auto 0 auto;
+	border: 0px;
+	color: #ffffff;
+}
+
+#comebacker .form input[type="submit"]:hover {
+	background: #c00;
+}
+
+.comebackerhidden {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+	#comebacker .over-window {
+		width: 320px;
+		height: 220px;
+		padding: 50px 0px 60px;
+	}
+
+	#comebacker .title-comebacker {
+		margin: 0 0 0 40%;
+		font-size: 24px;
+	}
+
+	#comebacker .form {
+		width: 100% !important;
+		background-color: #fff;
+		margin: 30px auto 0;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+	}
+
+	#comebacker .form form {
+		width: 100%;
+	}
+}

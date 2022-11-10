@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+
+/* ======= section 1 ========== */
+.section1 {
+    width: 100%;
+    margin: 110px auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.left-text {
+    width: 60%;
+    background: rgba(0, 0, 0, .9);
+    border: 1px solid #c00;
+    padding: 16px 32px;
+    color: #fff;
+    margin: auto;
+    margin-right: -50px;
+    z-index: 2;
+}
+
+.section1 h1 {
+    font-size: 2.1rem;
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    font: 1.4rem/1.25em futura-pt, Geneva, Arial, sans-serif;
+}
+
+.section1 h2 {
+    margin: 15px 0 10px;
+    font-size: .95rem;
+}
+
+.section1 img {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+/* ========== article ========= */
+
+.article {
+    font-family: 'Tinos', serif;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.article img {
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+}
+
+img.s-img {
+    width: 50%;
+}
+
+figcaption {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.article h1 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: inherit;
+    margin-bottom: 15px;
+}
+
+#bio {
+    color: #c00;
+    text-decoration: none;
+}
+
+#bio:hover {
+    color: #333;
+}
+
+.article p {
+    width: 100%;
+    margin: 0 auto 38px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    letter-spacing: .025em;
+    color: #232323;
+}
+
+/* ======= atteention ======== */
+.attention {
+    width: 80%;
+    margin: 25px auto 50px;
+    padding: 16px 24px 8px;
+    border: 1px solid #c8b86c;
+    text-align: center;
+}
+
+.attention h2 {
+    color: #c00;
+    font-size: 1.2em;
+}
+
+.questions h2 {
+    color: #c00;
+    margin: 20px 0;
+}
+
+.questions h3 {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.discont h2,
+.questions p {
+    font-size: 1.2em;
+}
+
+.block {
+    margin: 30px auto 40px 30px;
+    width: 85%;
+    font: 800 1.6rem/2rem futura-pt, Geneva, Arial, sans-serif;
+    position: relative;
+    color: #333;
+}
+
+.block::after {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    content: "";
+    width: 110px;
+    height: 4px;
+    background-color: #c00;
+}
+
+/* ====== product sale ========= */
+.product {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #c8b86c;
+    position: relative;
+}
+
+.product img {
+    width: 50%;
+}
+
+.discont {
+    width: 200px;
+    background-color: rgba(204, 0, 0, 0.9);
+    text-align: center;
+    color: #fff;
+    padding: 10px 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+}
+
+/* ========form=============== */
+#preform {
+    width: 78%;
+    margin: 50px auto 20px;
+    text-align: center;
+    color: #c00;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-control,
+.form-control:focus {
+    border: 1px solid #c00;
+    box-shadow: none;
+}
+
+.submit {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 20px auto;
+    padding: 8px 15px;
+    text-align: center;
+    background-color: #c00;
+    border: 1px solid #c00;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+#limit {
+    width: 90%;
+    font-size: .9em;
+}
+
+/* =========comments============= */
+.comments {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    color: #232323;
+}
+
+.comment {
+    margin: 15px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#title {
+    font: 400 1.7rem futura-pt, Arial, sans-serif;
+    color: #b4a76c;
+    letter-spacing: .3rem;
+    margin-left: 24px;
+}
+
+.ava {
+    text-align: end;
+}
+
+.ava {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.ava img {
+    width: 100% !important;
+}
+
+.comment h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.comment h4 {
+    margin-bottom: 20px;
+    color: #909090;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .04em;
+}
+
+.comment p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+}
+
+.comment img {
+    width: 80%;
+}
+
+.answ {
+    margin-left: 30px;
+}
+
+.to-form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.to-form:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* ======= Media screen ======= */
+
+@media screen and (max-width: 992px) {
+    .section1 {
+        margin-top: 120px;
+    }
+
+    .left-text {
+        width: 80%;
+    }
+
+    .section1 h1 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-text {
+        width: 80%;
+        margin: 0 auto -15px !important;
+    }
+
+    .section1 img {
+        width: 85%;
+        display: flex;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .section1 {
+        margin-top: 100px;
+    }
+
+    .section1 h1,
+    .discont h2,
+    .questions p,
+    #preform {
+        font-size: 1em;
+    }
+
+    .section1 h2 {
+        font-size: .75em;
+    }
+
+    .discont {
+        width: 150px;
+        bottom: -30px;
+        right: auto;
+    }
+
+    .product img,
+    form {
+        width: 80%;
+    }
+
+    .ava {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section1 img,
+    .comment img {
+        width: 100%;
+    }
+}

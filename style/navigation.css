@@ -1,0 +1,248 @@
+@font-face {
+    font-family: futuraPT;
+    src: url(./FuturaPTMedium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: futuraPT;
+    z-index: -1;
+}
+
+a {
+    color: #232323;
+}
+
+a.nav-link:hover,
+a:hover {
+    color: #c00;
+}
+
+.navbar,
+.navbar.container-fluid,
+.navbar>.container-fluid,
+.red-top {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.red-top {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 50px 5px 50px;
+    background-color: #fff;
+    box-shadow: 0 0.005rem 0.2rem 0.05rem #d3d3d3;
+}
+
+.navbar-brand {
+    width: 40%;
+}
+
+.navbar-brand img {
+    width: 10%;
+    margin: 20px 0 10px 50px;
+}
+
+.nav-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #999;
+    letter-spacing: .2em;
+    font-family: futuraPT;
+    z-index: -2;
+}
+
+.nav-text span {
+    margin: 0 .5rem;
+}
+
+.nav-text .active {
+    color: #c00;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-toggler {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    border: none;
+    text-align: end;
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+    background: url(../img/burger.svg);
+    background-repeat: no-repeat !important;
+    border: none;
+    text-align: end;
+}
+
+.btn-close:focus,
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    width: 20%;
+}
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.menu-logo img {
+    width: 30%;
+    margin: 0;
+}
+
+.menu .navbar-right {
+    width: 380px;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: url(../img/close.svg);
+    opacity: 1;
+}
+
+.menu-logo {
+    width: 100%;
+    background-color: #2b3139;
+    padding: 16px 16px 16px 30px;
+}
+
+.menu .navbar-brand {
+    width: 100%;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.dropdown {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 8px;
+    letter-spacing: .18em;
+}
+
+.dropdown-item,
+.dropdown-menu.show {
+    position: inherit !important;
+    transform: translate3d(-8px, 0px, 0px) !important;
+    color: #fff !important;
+    background-color: #2b3139 !important;
+    border: none !important;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search .form-control {
+    background-color: #dfded8;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 200;
+}
+
+.btn-outline-success {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: url(../img/search.png);
+    background-size: cover;
+    border: 0;
+}
+
+.search .btn:hover,
+.search .btn:active {
+    background-color: transparent;
+}
+
+.menu ul li a {
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar .navbar-toggler {
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .red-top {
+        background-color: #c00;
+    }
+
+    .navbar-toggler-icon {
+        background: url(../img/burger-white.svg);
+    }
+
+    .nav-text {
+        position: inherit;
+        margin: 5px auto 10px;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navbar-toggler {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+
+    }
+
+    .navbar-brand img {
+        width: 15%;
+        margin: 10px;
+    }
+
+    .navbar .navbar-toggler {
+        top: 0;
+        right: 15px;
+    }
+
+    .menu-logo img {
+        width: 30%;
+        margin: 0;
+    }
+
+}
